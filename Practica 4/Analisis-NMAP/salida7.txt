@@ -1,0 +1,78 @@
+# Nmap 7.94SVN scan initiated Tue Mar  5 16:28:58 2024 as: nmap -p 8000 -sVC -sC -O --open -sS -vvv -n -Pn -D 54.166.127.181 -oN salida7.txt -T3 184.73.32.59
+
+Nmap scan report for 184.73.32.59
+
+Host is up, received user-set (0.032s latency).
+
+Scanned at 2024-03-05 16:28:59 EST for 21s
+
+
+
+PORT     STATE SERVICE REASON         VERSION
+
+8000/tcp open  http    syn-ack ttl 64 Apache httpd
+
+|_http-server-header: Apache
+
+|_http-open-proxy: Proxy might be redirecting requests
+
+|_http-title: Error
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Device type: bridge|general purpose|switch
+
+Running (JUST GUESSING): Oracle Virtualbox (96%), QEMU (91%), Bay Networks embedded (86%)
+
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu cpe:/h:baynetworks:baystack_450
+
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+
+Aggressive OS guesses: Oracle Virtualbox (96%), QEMU user mode network gateway (91%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (86%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+TCP/IP fingerprint:
+
+SCAN(V=7.94SVN%E=4%D=3/5%OT=8000%CT=%CU=%PV=N%G=N%TM=65E78EB0%P=x86_64-pc-linux-gnu)
+
+SEQ(SP=11%GCD=FA00%ISR=9C%TI=I%CI=I%II=I%TS=U)
+
+SEQ(SP=18%GCD=FA00%ISR=A3%TI=I%CI=I%TS=U)
+
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+
+WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)
+
+ECN(R=Y%DF=N%TG=40%W=FFFF%O=M5B4%CC=N%Q=)
+
+T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+
+T2(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+
+T3(R=Y%DF=N%TG=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+
+T4(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+
+T6(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+
+T7(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+
+U1(R=N)
+
+IE(R=Y%DFI=N%TG=40%CD=Z)
+
+
+
+TCP Sequence Prediction: Difficulty=17 (Good luck!)
+
+IP ID Sequence Generation: Incrementing by 2
+
+
+
+Read data files from: /usr/bin/../share/nmap
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+
+# Nmap done at Tue Mar  5 16:29:20 2024 -- 1 IP address (1 host up) scanned in 21.34 seconds
+

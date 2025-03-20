@@ -1,0 +1,106 @@
+# Nmap 7.94SVN scan initiated Tue Mar  5 09:10:38 2024 as: nmap -p- -sVC -sC -O --open -sS -vvv -n -Pn -D 54.166.127.181 -oN salida.txt -T3 184.73.32.59
+adjust_timeouts2: packet supposedly had rtt of 8094154 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8094154 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8209955 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8209955 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8743251 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8743251 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9154457 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9154457 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8170752 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8170752 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8830070 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8830070 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8899270 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8899270 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9450253 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9450253 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8725891 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8725891 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8414199 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8414199 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8821570 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8821570 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8950390 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8950390 microseconds.  Ignoring time.
+Nmap scan report for 184.73.32.59
+Host is up, received user-set (0.058s latency).
+Scanned at 2024-03-05 09:10:38 CST for 1971s
+Not shown: 65527 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE REASON         VERSION
+80/tcp    open  http    syn-ack ttl 64 Apache httpd
+|_http-server-header: Apache
+|_http-title: Error
+222/tcp   open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 ba:d5:e6:f9:20:2b:8d:23:e5:3b:72:9c:b9:d5:4f:07 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsakrFMMBloh6VNVjJrtHePUhzoHTJbAzr4Jo8vHO3GELw+6ZcljduEbqUDHuBY5vb4aADOt/gN32QQWdcI4/86v2dtRH2zLvHxfDMxSOt2xgDl9x8s/cX/MkSoZciQuiE7eYnTMafT4Mv+EO8juoS8B8ipRV48HU6QOW5jFigZdALmny18cnurttgyBxu68rDIScRvTNYrSQarM2YlBKWJsAUNmVZXJTpClyZiyyeLsveu7rizihk+xD5/6XxKTDNlpB+c70GWKhJDveJ2ji5qe9mK0xKyo++Y6Y4EUl9rt/RXfoOt0N2CToGYxfGsGFR7RVeuZY2zL7KslgmBhaf2Jy8KlRPnHeheFa3QNqmQ/4dxrC+INR7dInoaBkT9PetYq50KwdPkehb0onmBCfUQ30LfDp6Zk8s7/wJSglZmbfpW5FO2/F6ImFgy5+Hfi/i6TYvARgzOPCWnVa/kW3pNG1uFoPbSSPkiOFM+oPWV2v5wRUhXrPwtlUZn8sqi1k=
+2220/tcp  open  netiq?  syn-ack ttl 64
+| fingerprint-strings: 
+|   GenericLines: 
+|_    `CdI!:.s<|JS6S4-c
+2222/tcp  open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 4b:72:1c:0e:3a:59:9d:8a:b8:af:b3:80:b3:e7:3a:c5 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWEwoS5I6MeNhlD5YBgTGTJagFBpW35zkSWfnKPb4sHfN6HamMralzqXSNmYPB82xSI8MErrJl9Mv+6ri8M27ym/gQ6ctpMXS7yNA9YRzMbkznpx0OvjWywTvGaM5Z2b/wrOL93fs1oKMjRYDxKTazDlsQ2OOtWLLkMI3Bh/hyp7+CCSDGp5O3+FzY3frzOZYBx8oFlF2fE1mJObck1gWrGZ2j6JH5rkrq07kdwiBl/18udKwUKw/tfRBq7SE+Tw2zme7dxjkM5+aNJjCM6z5nc5FhqCkGn1MRvPBqQ9j4Q1EuNrVKM6kOykta9vBGi1ZXTjOPZgXQ3O/D02hlZxox
+|   256 e7:af:f9:38:d0:d9:18:23:ca:4e:0f:63:68:f8:bf:02 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMiPN6KRM16GQw4XTdXiv4Kid42tfWaWEjqaUO5t5GoSip+ejZq2Onqtj5OSt1ThTQh9sAaZnyWTSE/yiIsfeg0=
+|   256 bb:1b:e4:e1:ca:c1:eb:d4:57:ca:57:26:31:67:2c:16 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGqC+DhCI0JJANvHmwPjD+m9G0qTj+rFMEenkKfPWTLb
+8000/tcp  open  http    syn-ack ttl 64 Apache httpd
+|_http-server-header: Apache
+|_http-title: Error
+|_http-open-proxy: Proxy might be redirecting requests
+8080/tcp  open  http    syn-ack ttl 64 Apache httpd
+|_http-server-header: Apache
+|_http-title: Error
+22022/tcp open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 b7:cc:eb:85:db:b2:9e:33:1a:30:34:99:3d:7e:06:bc (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/bPJqB0bVRquFvGAkiFPDbVvbxMHIQfnAPgAeSGIuDxUFHFjI4Q7Fj3zLmVZ/TVLCJ9/LrqodvYWMrZnMh26O27zEr/ASFu1HLYWAY82uqgbh+W7/48HwFV7nao+c0NXt7uNiKiQwTDtJ6EO+TIs0830kZrcNbeZGAi+q6CDCDbHh9F6UiMkGd9fXGLmtMmsza/xdClj6geMSpPEEvWoEq2sXaOO+4gtSltT9bnjPg+Lckf8k5zdHxD2kzSzw9m+58dBktB9YjIotqT3GD3m6S5+CsrSU9ONKCWaLwWdylKVlBgXEJZ4bkua/yK15oG8xazc/yDY+ytA2dbF0CDKp
+|   256 91:7d:a9:41:a4:50:12:f9:54:ce:7a:f3:b5:34:e0:9f (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJaOnUDgdXp96NgzMVOQhsdbxgIT2jze3aI/SsAnE5yxEb72JM0kRFUnPz5lALYG56eDTPGdGUgKDfDHeSHDSVg=
+|   256 08:21:8b:f5:06:e2:84:80:70:7b:e6:1c:c3:bf:7c:74 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMzTM4VRVtOpGJErgGzp1fLZuSE07JZeuMAdlpb3Gh8U
+22220/tcp open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0b:b6:37:1d:05:20:0f:55:89:77:da:68:41:77:bf:8a (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRAkjnLzxBCiYM8ngPcccyzpf21dPG+6jGrRb5k1XtWUWC6GqLDT/nH5K+ginsky+vTUoqDUAmGKHPRLo0LtAzAOHogtmmjDV+MtByH5f4nbfZr2tCY+a1TjFyuSZrNypKSOSSSHZEqWDzpaKAVaQPP9RjGmhR+qPvIGAkw7QoQfixHEKOntVcMuAkORD5u2LGB9Hz9kbefvwVQxB8D8amfGXayaNxPnrX17OXqJRs6JGnwwHYQn9h8EhwRodTADZFYNxjDnibgWs5eo4nUtBJzXIBPJYJMnfMRTkGPFGafVoBdsMAAU1XnnQdCCRRvLaTXj0lGxB6qI1raJ1S2EXd
+|   256 2f:75:5c:da:dd:a5:f0:12:64:99:b5:3d:89:79:a4:99 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDkaMcSgJb4fUIju9PphvGl1W23DrhuoITy5jotLyLd2VXUISFWu/FFGY2DVQNWnZ0kP3OyAt/l0KLWaPGwYOGQ=
+|   256 5e:23:e6:ee:16:0e:69:68:5e:94:8a:51:1a:d9:7c:7b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICwdfHk1RIxkEkUh0Xm6FRis+vR6gkRg+/M/D/jXUjKj
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2220-TCP:V=7.94SVN%I=7%D=3/5%Time=65E73CF2%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,13,"`CdI!:\.s<\|JS6S4-c\r\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (93%), QEMU (89%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Oracle Virtualbox (93%), QEMU user mode network gateway (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=3/5%OT=80%CT=%CU=%PV=N%G=N%TM=65E73DA1%P=x86_64-pc-linux-gnu)
+SEQ(SP=19%GCD=FA00%ISR=A0%TI=RD%CI=I%TS=U)
+SEQ(SP=23%GCD=FA00%ISR=A8%TI=RD%CI=I%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)
+ECN(R=Y%DF=N%TG=40%W=FFFF%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%TG=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T6(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=N)
+
+TCP Sequence Prediction: Difficulty=25 (Good luck!)
+IP ID Sequence Generation: Randomized
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  5 09:43:29 2024 -- 1 IP address (1 host up) scanned in 1972.16 seconds

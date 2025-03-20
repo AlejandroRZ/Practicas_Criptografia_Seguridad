@@ -1,0 +1,171 @@
+# Nmap 7.94SVN scan initiated Tue Mar  5 10:03:54 2024 as: nmap -A -p 222, --script=all --open -sS -vvv -T1 -D 54.166.127.181 -oN salida2.txt 2222, 22022, 22220 184.73.32.59
+Pre-scan script results:
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip    cli ip     mask           gw        dns       vendor
+|         10.0.2.2  10.0.2.16  255.255.255.0  10.0.2.2  10.0.2.3  -
+|_        10.0.2.2  10.0.2.15  255.255.255.0  10.0.2.2  10.0.2.3  -
+|_hostmap-robtex: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     Interface: eth0
+|     IP Offered: 10.0.2.16
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 10.0.2.2
+|     Subnet Mask: 255.255.255.0
+|     Router: 10.0.2.2
+|     Domain Name Server: 10.0.2.3
+|_    IP Address Lease Time: 1d00h00m00s
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+|_eap-info: please specify an interface with -e
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+Failed to resolve "2222,".
+Failed to resolve "22022,".
+Nmap scan report for ec2-184-73-32-59.compute-1.amazonaws.com (184.73.32.59)
+Host is up, received echo-reply ttl 255 (0.100s latency).
+Scanned at 2024-03-05 10:07:22 CST for 6856s
+
+PORT    STATE SERVICE REASON         VERSION
+222/tcp open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Debian 5 (protocol 2.0)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|_    publickey
+| vulners: 
+|   cpe:/a:openbsd:openssh:6.6.1p1: 
+|     	PRION:CVE-2015-5600	8.5	https://vulners.com/prion/PRION:CVE-2015-5600
+|     	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
+|     	PRION:CVE-2020-16088	7.5	https://vulners.com/prion/PRION:CVE-2020-16088
+|     	PRION:CVE-2015-6564	6.9	https://vulners.com/prion/PRION:CVE-2015-6564
+|     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	PRION:CVE-2015-5352	4.3	https://vulners.com/prion/PRION:CVE-2015-5352
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2015-5352	4.3	https://vulners.com/cve/CVE-2015-5352
+|     	PRION:CVE-2015-6563	1.9	https://vulners.com/prion/PRION:CVE-2015-6563
+|_    	CVE-2015-6563	1.9	https://vulners.com/cve/CVE-2015-6563
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh2-enum-algos: 
+|   kex_algorithms: (11)
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       kex-strict-s-v00@openssh.com
+|   server_host_key_algorithms: (3)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ssh-rsa
+|   encryption_algorithms: (7)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1
+|       hmac-md5
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (1)
+|_      none
+|_banner: SSH-2.0-OpenSSH_6.6.1p1 Debian-5
+|_unusual-port: ssh unexpected on port tcp/222
+| ssh-hostkey: 
+|   3072 ba:d5:e6:f9:20:2b:8d:23:e5:3b:72:9c:b9:d5:4f:07 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsakrFMMBloh6VNVjJrtHePUhzoHTJbAzr4Jo8vHO3GELw+6ZcljduEbqUDHuBY5vb4aADOt/gN32QQWdcI4/86v2dtRH2zLvHxfDMxSOt2xgDl9x8s/cX/MkSoZciQuiE7eYnTMafT4Mv+EO8juoS8B8ipRV48HU6QOW5jFigZdALmny18cnurttgyBxu68rDIScRvTNYrSQarM2YlBKWJsAUNmVZXJTpClyZiyyeLsveu7rizihk+xD5/6XxKTDNlpB+c70GWKhJDveJ2ji5qe9mK0xKyo++Y6Y4EUl9rt/RXfoOt0N2CToGYxfGsGFR7RVeuZY2zL7KslgmBhaf2Jy8KlRPnHeheFa3QNqmQ/4dxrC+INR7dInoaBkT9PetYq50KwdPkehb0onmBCfUQ30LfDp6Zk8s7/wJSglZmbfpW5FO2/F6ImFgy5+Hfi/i6TYvARgzOPCWnVa/kW3pNG1uFoPbSSPkiOFM+oPWV2v5wRUhXrPwtlUZn8sqi1k=
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Scan delay (15000) is greater than 500
+Aggressive OS guesses: Oracle Virtualbox (94%), QEMU user mode network gateway (94%), Sanyo PLC-XU88 digital video projector (88%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (87%), Bay Networks BayStack 450 switch (software version 4.2.0.16) (87%), Netgear RT311 broadband router (86%), Slingmedia Slingbox AV TV over IP gateway (86%), ZyXEL Prestige 202 ISDN router (ZyNOS 2.41) (86%), ZyXEL Prestige 600-series ADSL router (86%), D-Link DI-714P+ wireless broadband router (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=3/5%OT=222%CT=%CU=%PV=N%DS=1%DC=T%G=N%TM=65E75E02%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD%TS=U)
+SEQ(TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)
+ECN(R=Y%DF=N%TG=40%W=FFFF%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%TG=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%TG=40%W=FFFF%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=N)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=0 (Trivial joke)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| dns-brute: 
+|_  DNS Brute-force hostnames: No results.
+|_whois-domain: You should provide a domain name.
+| port-states: 
+|   tcp: 
+|_    open: 222
+| dns-blacklist: 
+|   SPAM
+|     l2.apews.org - FAIL
+|_    bl.nszones.com - DYNAMIC
+|_path-mtu: PMTU == 1500
+| asn-query: 
+| BGP: 184.73.0.0/16 | Country: US
+|   Origin AS: 14618 - AMAZON-AES, US
+|_    Peer AS: 16509
+|_ipidseq: Unknown
+| whois-ip: Record found at whois.arin.net
+| netrange: 184.73.0.0 - 184.73.255.255
+| netname: AMAZON-IAD
+| orgname: Amazon Data Services NoVa
+| orgid: ADSN-1
+| country: US stateprov: VA
+| orgtechname: Amazon EC2 Network Operations
+|_orgtechemail: amzn-noc-contact@amazon.com
+| traceroute-geolocation: 
+|   HOP  RTT     ADDRESS                                                  GEOLOCATION
+|_  1    224.54  ec2-184-73-32-59.compute-1.amazonaws.com (184.73.32.59)  39.047,-77.490 United States (Virginia)
+| ip-geolocation-geoplugin: coordinates: 39.0469, -77.4903
+|_location: Virginia, United States
+| fcrdns: 
+|   ec2-184-73-32-59.compute-1.amazonaws.com: 
+|     status: pass
+|     addresses: 
+|_      184.73.32.59
+
+TRACEROUTE (using port 222/tcp)
+HOP RTT       ADDRESS
+1   224.54 ms ec2-184-73-32-59.compute-1.amazonaws.com (184.73.32.59)
+
+Post-scan script results:
+|_ip-geolocation-map-google: The script encountered an error: Script argument problem
+|_ip-geolocation-map-kml: The script encountered an error: Script argument problem
+|_ip-geolocation-map-bing: The script encountered an error: Script argument problem
+| reverse-index: 
+|_  222/tcp: 184.73.32.59
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  5 12:01:38 2024 -- 2 IP addresses (2 hosts up) scanned in 7064.61 seconds
